@@ -9,7 +9,7 @@ function App() {
         primary={false}
         label="register"
         size="large"
-        backgroundColor="red"
+        backgroundColor="blue"
       />
     </div>
   );
