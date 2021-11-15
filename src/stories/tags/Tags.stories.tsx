@@ -22,5 +22,5 @@ Mine.args = {
 export const Dio = Template.bind({});
 Dio.args = {
   label: "Mine",
-  backgroundColor: "green",
+  backgroundColor: "yellow",
 };
