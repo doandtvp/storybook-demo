@@ -5,5 +5,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/preset-scss",
     "@storybook/addon-measure",
+    "@storybook/addon-actions",
+    "@storybook/addon-knobs",
   ],
 };

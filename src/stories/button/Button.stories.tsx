@@ -1,41 +1,71 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import Button from './Button';
+import { action } from '@storybook/addon-actions';
 
-import { Button } from "./Button";
-
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Example/Button",
+  title: 'DIYBA SG/Button',
   component: Button,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
+  parameters: { actions: { argTypesRegex: '^on.*' } },
 } as ComponentMeta<typeof Button>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: "Button",
+const handleClick = () => {
+  alert('3ka kun');
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: "Button",
+export const Default = Template.bind({});
+Default.args = {
+  label: 'SEARCH PROPERTIES',
+  classType: 'default',
+  onClick: (action('clicked'), handleClick),
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: "large",
-  label: "Button",
+export const SearchProperties = Template.bind({});
+SearchProperties.args = {
+  label: 'SEARCH PROPERTIES',
+  classType: 'btn-search',
+  onClick: (action('clicked'), handleClick),
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: "small",
-  label: "Button",
+export const Cancel = Template.bind({});
+Cancel.args = {
+  label: 'Cancel',
+  classType: 'btn-cancel',
+  onClick: (action('clicked'), handleClick),
+};
+
+export const MAS = Template.bind({});
+MAS.args = {
+  label: 'Mark as sold',
+  classType: 'btn-mas',
+  onClick: (action('clicked'), handleClick),
+};
+
+export const Import = Template.bind({});
+Import.args = {
+  label: 'Import Property',
+  classType: 'btn-import',
+  onClick: (action('clicked'), handleClick),
+};
+
+export const CancelLB = Template.bind({});
+CancelLB.args = {
+  label: 'Cancel',
+  classType: 'btn-cancel__lb',
+  onClick: (action('clicked'), handleClick),
+};
+
+export const SaveLB = Template.bind({});
+SaveLB.args = {
+  label: 'Save',
+  classType: 'btn-save__lb',
+  onClick: (action('clicked'), handleClick),
+};
+
+export const HelpLB = Template.bind({});
+HelpLB.args = {
+  label: 'Get Help From DIYBA',
+  classType: 'btn-help__lb',
+  onClick: (action('clicked'), handleClick),
 };

@@ -1,0 +1,24 @@
+.btn-submit {
+  max-width: 670px;
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: none;
+  font-size: 20px;
+  background-color: #f58e6a;
+  color: #283977;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #283977;
+    color: #fff;
+  }
+
+  span {
+    position: absolute;
+    right: 25px;
+  }
+}

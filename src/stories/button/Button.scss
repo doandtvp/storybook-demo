@@ -1,0 +1,92 @@
+.button {
+  box-sizing: border-box;
+  padding: 20px 23px;
+  border-radius: 60px;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.default {
+  color: black;
+  border: 2px solid black;
+}
+
+.btn-search {
+  background-color: #f58e6a;
+  color: #283977;
+
+  &:hover {
+    background-color: #283977;
+    color: #fff;
+  }
+}
+
+.btn-cancel {
+  background-color: #fff;
+  color: #759bef;
+  border: 2px solid #759bef;
+
+  &:hover {
+    background-color: #759bef;
+    color: #fff;
+  }
+}
+
+.btn-mas {
+  background-color: #759bef;
+  color: #fff;
+
+  &:hover {
+    background-color: #283977;
+    color: #fff;
+  }
+}
+
+.btn-import {
+  background-color: #fff;
+  color: #759bef;
+  border: 2px solid #759bef;
+  padding: 15px 23px;
+
+  &:hover {
+    &:hover {
+      background-color: #759bef;
+      color: #fff;
+    }
+  }
+}
+
+//===> light blue background buttons
+.btn-cancel__lb {
+  background-color: #759bef;
+  color: #fff;
+  border: 2px solid #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: #759bef;
+  }
+}
+
+.btn-save__lb {
+  background-color: #fff;
+  color: #759bef;
+
+  &:hover {
+    background-color: #283977;
+    color: #fff;
+  }
+}
+
+.btn-help__lb {
+  background-color: #f58e6a;
+  color: #283977;
+
+  &:hover {
+    background-color: #283977;
+    color: #fff;
+  }
+}
