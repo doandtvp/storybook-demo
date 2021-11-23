@@ -1,5 +1,6 @@
 import React from 'react';
 import './SubmitButton.scss';
+import { RightCircleOutlined } from '@ant-design/icons';
 
 interface SubmitButtonProps {
   label: string;
@@ -16,8 +17,10 @@ const SubmitButton = ({
 }: SubmitButtonProps) => {
   return (
     <button type="button" disabled={disabled} className="btn-submit" {...props}>
-      {label}
-      <span>icons</span>
+      <div className="submit-content">{label}</div>
+      <i>
+        <RightCircleOutlined />
+      </i>
     </button>
   );
 };

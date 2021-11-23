@@ -1,0 +1,15 @@
+.favorite {
+  i {
+    font-size: 30px;
+    color: #759bef !important;
+    cursor: pointer;
+
+    &:hover {
+      .anticon {
+        .anticon-heart {
+          background-color: #759bef !important;
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,13 @@
 .button {
   box-sizing: border-box;
-  padding: 20px 23px;
-  border-radius: 60px;
+  padding: 15px 23px;
+  border-radius: 50px;
   border: none;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  height: 50px;
 }
 
 .default {
@@ -27,7 +28,7 @@
 .btn-cancel {
   background-color: #fff;
   color: #759bef;
-  border: 2px solid #759bef;
+  border: 3px solid #759bef;
 
   &:hover {
     background-color: #759bef;

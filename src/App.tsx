@@ -1,9 +1,9 @@
-import { Button } from "./stories/button/Button";
-import { Tags } from "./stories/tags/Tags";
+import Button from './stories/button/Button';
+import Tags from './stories/tags/Tags';
 
 function App() {
   const handleClick = () => {
-    console.log("ddfdf");
+    console.log('ddfdf');
   };
 
   return (

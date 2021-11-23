@@ -1,12 +1,12 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Tabs from './Tabs';
+import Sort from './Sort';
 
 export default {
-  title: 'DIYBA SG/Tabs',
-  component: Tabs,
+  title: 'DIYBA SG/Sort',
+  component: Sort,
   parameters: { actions: { argTypesRegex: '^on.*' } },
-} as ComponentMeta<typeof Tabs>;
+} as ComponentMeta<typeof Sort>;
 
-const Template: ComponentStory<typeof Tabs> = () => <Tabs />;
+const Template: ComponentStory<typeof Sort> = () => <Sort />;
 
 export const Default = Template.bind({});

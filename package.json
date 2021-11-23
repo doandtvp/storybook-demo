@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@storybook/addon-measure": "^6.4.0-alpha.27",
     "@storybook/preset-scss": "^1.0.3",
     "@testing-library/jest-dom": "^5.11.4",
