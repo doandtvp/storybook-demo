@@ -7,9 +7,22 @@
     &:hover {
       .anticon {
         .anticon-heart {
-          background-color: #759bef !important;
+          fill: red !important;
         }
       }
     }
+
+    .checked-icon {
+      position: absolute;
+      font-size: 12px;
+      top: 27px;
+      left: 25px;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+
+  .checked {
+    position: relative;
   }
 }

@@ -1,13 +1,41 @@
-import './Favorite.scss';
-import { HeartOutlined } from '@ant-design/icons';
+import { useState } from "react";
+import "./Favorite.scss";
+import { HeartOutlined, HeartFilled, CheckOutlined } from "@ant-design/icons";
 
 const Favorite = () => {
+  const [hover, setHover] = useState(true);
+  const [select, setSelect] = useState(false);
+
+  const handleHover = () => {
+    if (select) {
+      setHover(false);
+    } else {
+      setHover(!hover);
+    }
+  };
+
+  const handleSelect = () => {
+    setSelect(!select);
+    setHover(false);
+  };
+
   return (
-    <div className="favorite">
+    <span className="favorite">
       <i>
-        <HeartOutlined />
+        {hover ? (
+          <HeartOutlined onMouseOver={handleHover} />
+        ) : (
+          <HeartFilled
+            onMouseLeave={handleHover}
+            onClick={handleSelect}
+            className="checked"
+          />
+        )}
+        {select && (
+          <CheckOutlined className="checked-icon" onClick={handleSelect} />
+        )}
       </i>
-    </div>
+    </span>
   );
 };
 
