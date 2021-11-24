@@ -46,14 +46,14 @@ $transition: all 0.3s ease;
 }
 
 @mixin nm {
-  padding: 5px 7px;
+  padding: 7px 7px 5px 7px;
   font-size: 14px;
   width: 15px;
   height: 9px;
 }
 
 @mixin ns {
-  padding: 5px;
+  padding: 6px 5px 4px 5px;
   font-size: 14px;
   width: 10px;
   height: 10px;
