@@ -16,3 +16,10 @@ Submit.args = {
   label: 'Submit to DIYBA',
   classType: 'submit',
 };
+
+export const Subscribe = Template.bind({});
+Subscribe.args = {
+  mw: '315px',
+  label: 'Subscribe',
+  classType: 'submit',
+};

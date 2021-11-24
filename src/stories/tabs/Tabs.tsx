@@ -1,47 +1,37 @@
 import React, { useState } from 'react';
 import './Tabs.scss';
-import {
-  HomeOutlined,
-  HeartOutlined,
-  EnvironmentOutlined,
-} from '@ant-design/icons';
 
-const Tabs = () => {
-  const [active, setActive] = useState(1);
+interface TabsProps {
+  mw: string;
+  lists: {
+    icon: JSX.Element;
+    name: string;
+  }[];
+  onClick?: () => void;
+}
+
+const Tabs = (props: TabsProps) => {
+  const [active, setActive] = useState(0);
+  const { mw, lists } = props;
+  const itemW = 100 / lists.length;
 
   const handleActive = (data: number) => {
     setActive(data);
   };
 
   return (
-    <div className="tabs">
-      <div
-        className={active === 0 ? 'tabs-item active' : 'tabs-item'}
-        onClick={() => handleActive(0)}
-      >
-        <i>
-          <HomeOutlined />
-        </i>
-        <span>Porperties</span>
-      </div>
-      <div
-        className={active === 1 ? 'tabs-item active' : 'tabs-item'}
-        onClick={() => handleActive(1)}
-      >
-        <i>
-          <EnvironmentOutlined />
-        </i>
-        <span>markets</span>
-      </div>
-      <div
-        className={active === 2 ? 'tabs-item active' : 'tabs-item'}
-        onClick={() => handleActive(2)}
-      >
-        <i>
-          <HeartOutlined />
-        </i>
-        <span>saved</span>
-      </div>
+    <div className="tabs" style={{ maxWidth: mw }}>
+      {lists.map((item, index) => (
+        <div
+          style={{ width: `${itemW}%` }}
+          className={active === index ? 'tabs-item active' : 'tabs-item'}
+          onClick={() => handleActive(index)}
+          key={index}
+        >
+          <i>{item.icon}</i>
+          <span>{item.name}</span>
+        </div>
+      ))}
     </div>
   );
 };
