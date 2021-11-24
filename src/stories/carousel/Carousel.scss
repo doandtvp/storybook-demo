@@ -6,7 +6,7 @@
   border: 1px solid;
 
   .carosel-images {
-    height: 60%;
+    height: 375px;
     width: 100%;
     background-color: red;
     border-radius: 16px 16px 0 0;
@@ -14,7 +14,7 @@
 
   .carosel-content {
     box-sizing: border-box;
-    padding: 40px 30px;
+    padding: 45px 30px 50px 30px;
 
     .carosel-content__title {
       font-size: 30px;
@@ -37,6 +37,7 @@
     .carosel-content__state {
       display: flex;
       align-items: center;
+      margin-bottom: 35px;
 
       div {
         margin-right: 25px;
@@ -46,6 +47,35 @@
           i {
             margin-right: 5px;
           }
+        }
+      }
+    }
+
+    .carosel-content__value {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .items {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+
+        i {
+          margin-right: 7px;
+          color: #283977;
+        }
+
+        .item-name {
+          font-weight: bold;
+          margin-right: 5px;
+        }
+
+        .item-value__m {
+          color: #759bef;
+          text-decoration: underline;
+          cursor: pointer;
         }
       }
     }

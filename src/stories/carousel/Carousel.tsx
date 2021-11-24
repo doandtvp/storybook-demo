@@ -1,5 +1,5 @@
 import './Carousel.scss';
-import { CarOutlined } from '@ant-design/icons';
+import { CarOutlined, DollarOutlined } from '@ant-design/icons';
 
 const Carousel = () => {
   return (
@@ -47,7 +47,38 @@ const Carousel = () => {
             </span>
           </div>
         </div>
-        <div className="carosel-content__value"></div>
+        <div className="carosel-content__value">
+          <div className="items">
+            <i>
+              <DollarOutlined />
+            </i>
+            <span className="item-name">Potential Cashflow:</span>
+            <span className="item-value"> $12,000</span>
+          </div>
+          <div className="items">
+            <i>
+              <DollarOutlined />
+            </i>
+            <span className="item-name">Potential Value:</span>
+            <span className="item-value"> $650,000</span>
+          </div>
+          <div className="items">
+            <i>
+              <DollarOutlined />
+            </i>
+            <span className="item-name">Potential Value:</span>
+            <span className="item-value"> 9.2%</span>
+          </div>
+          <div className="items">
+            <i>
+              <DollarOutlined />
+            </i>
+            <span className="item-name">Potential Value:</span>
+            <a href="#market" className="item-value__m">
+              Baywater WA 6053
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
