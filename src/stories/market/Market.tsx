@@ -1,7 +1,7 @@
-import React from 'react';
-import { DollarOutlined } from '@ant-design/icons';
-import './Market.scss';
-import au from '../../images/market/australia.jpg';
+import React from "react";
+import { DollarOutlined } from "@ant-design/icons";
+import "./Market.scss";
+import au from "../../images/market/australia.jpg";
 
 const Market = () => {
   return (
@@ -61,7 +61,7 @@ const Market = () => {
               <span className="item-name">
                 Average number of bedrooms:
                 <span className="item-value" id="bedroom-value">
-                  {' '}
+                  {" "}
                   2.6
                 </span>
               </span>

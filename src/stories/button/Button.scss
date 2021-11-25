@@ -7,7 +7,6 @@
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-  height: 50px;
 }
 
 .default {
@@ -29,6 +28,7 @@
   background-color: #fff;
   color: #759bef;
   border: 3px solid #759bef;
+  padding: 12px 23px !important;
 
   &:hover {
     background-color: #759bef;
