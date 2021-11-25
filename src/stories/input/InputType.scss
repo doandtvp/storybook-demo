@@ -1,0 +1,35 @@
+.input {
+  max-width: 675px;
+  width: 100%;
+
+  label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .input-content {
+    width: 100%;
+    height: 65px;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 4px 18px;
+    background-color: #f1f2f6;
+    color: #353536;
+
+    &:hover {
+      border: 1px solid rgba(117, 155, 239, 1);
+    }
+
+    &:focus {
+      border: 1px solid rgba(117, 155, 239, 1);
+      box-shadow: none;
+      caret-color: rgba(117, 155, 239, 1);
+    }
+
+    .ant-input:placeholder-shown {
+      font-size: 20px;
+    }
+  }
+}

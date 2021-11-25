@@ -1,0 +1,50 @@
+.toggle-button {
+  display: flex;
+  height: auto;
+  align-items: center;
+
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px 0 0;
+  }
+
+  .ant-switch {
+    width: 55px;
+    &:hover {
+      background-color: #f58e6a;
+
+      .ant-switch-handle::before {
+        border: 1px solid #f58e6a;
+      }
+    }
+
+    .ant-switch-handle::before {
+      top: -9px;
+      right: -9px;
+      bottom: -9px;
+      left: -9px;
+      border-radius: 50%;
+      border: 1px solid #c3c6cc;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .ant-switch-checked {
+    background-color: #759bef;
+    .ant-switch-handle::before {
+      top: -9px;
+      right: -9px;
+      bottom: -9px;
+      left: -9px;
+      border-radius: 50%;
+      border: 1px solid #759bef;
+      width: 35px;
+      height: 35px;
+    }
+    &:hover {
+      background-color: #f58e6a;
+    }
+  }
+}

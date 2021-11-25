@@ -1,7 +1,7 @@
-import { useState } from "react";
-import "./Sidebar.scss";
-import webappLogo from "../../images/sidebar/webappLogo.png";
-import smLogo from "../../images/sidebar/smLogo.png";
+import { useState } from 'react';
+import './Sidebar.scss';
+import webappLogo from '../../images/sidebar/webappLogo.png';
+import smLogo from '../../images/sidebar/smLogo.png';
 import {
   MenuFoldOutlined,
   HomeOutlined,
@@ -12,65 +12,65 @@ import {
   UserOutlined,
   HomeFilled,
   VerticalAlignTopOutlined,
-} from "@ant-design/icons";
+} from '@ant-design/icons';
 
 interface SidebarProps {
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const menu = [
   {
     icons: <MenuFoldOutlined />,
-    name: "dashboard",
+    name: 'dashboard',
     notification: 0,
   },
   {
     icons: <HomeOutlined />,
-    name: "My portfolio",
+    name: 'My portfolio',
     notification: 0,
   },
   {
     icons: <HomeFilled />,
-    name: "Pending properties",
+    name: 'Pending properties',
     notification: 0,
   },
   {
     icons: <SearchOutlined />,
-    name: "search",
+    name: 'search',
     notification: 0,
   },
   {
     icons: <BellOutlined />,
-    name: "Notification",
+    name: 'Notification',
     notification: 7,
   },
   {
     icons: <HeartOutlined />,
-    name: "wishlist",
+    name: 'wishlist',
     notification: 34,
   },
   {
     icons: <MessageOutlined />,
-    name: "contact",
+    name: 'contact',
     notification: 0,
   },
   {
     icons: <UserOutlined />,
-    name: "account",
+    name: 'account',
     notification: 0,
   },
 ];
 
 const Sidebar = (props: SidebarProps) => {
   const [toggle, setToggle] = useState(false);
-  const [active, setActive] = useState("dashboard");
+  const [active, setActive] = useState('dashboard');
 
   const handleToggle = () => {
     setToggle(!toggle);
   };
 
   return (
-    <div className={toggle ? "sidebar-sm" : "sidebar"}>
+    <div className={toggle ? 'sidebar-sm' : 'sidebar'}>
       <div className="sidebar-logo">
         <img src={toggle ? smLogo : webappLogo} alt="sidebar-logo" />
       </div>
@@ -79,7 +79,7 @@ const Sidebar = (props: SidebarProps) => {
           {menu.map((item) => (
             <li
               key={item.name}
-              className={active === item.name ? "active" : ""}
+              className={active === item.name ? 'active' : ''}
               onClick={() => setActive(item.name)}
             >
               <i>{item.icons}</i>
@@ -90,8 +90,8 @@ const Sidebar = (props: SidebarProps) => {
                   <span
                     className={
                       item.notification >= 10
-                        ? "sidebar-menu__notification-m"
-                        : "sidebar-menu__notification-s"
+                        ? 'sidebar-menu__notification-m'
+                        : 'sidebar-menu__notification-s'
                     }
                   >
                     {item.notification}
@@ -103,9 +103,9 @@ const Sidebar = (props: SidebarProps) => {
         </ul>
       </div>
       <div className="sidebar-toggle" onClick={handleToggle}>
-        <i className="zmdi zmdi-view-dashboard">
+        <i>
           <VerticalAlignTopOutlined
-            style={{ transform: "rotate(-90deg)", fontSize: "30px" }}
+            style={{ transform: 'rotate(-90deg)', fontSize: '30px' }}
           />
         </i>
         <p>Close</p>

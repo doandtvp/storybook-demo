@@ -1,0 +1,27 @@
+.subscription {
+  font-size: 20px;
+  font-weight: bold;
+
+  h2 {
+    color: #283977;
+  }
+
+  .subscription-title {
+    font-weight: normal;
+
+    .subscription-price {
+      color: #283977;
+      font-weight: bold;
+    }
+  }
+
+  .subscription-cancel {
+    text-decoration: underline;
+    color: #f02d2d;
+
+    &:hover {
+      cursor: pointer;
+      color: #759bef;
+    }
+  }
+}

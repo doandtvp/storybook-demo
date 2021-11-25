@@ -1,0 +1,58 @@
+.car-parks {
+  .car-parks-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+
+    .car-parks-title__icon {
+      margin-right: 15px;
+      color: #283977;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    span {
+      color: #283977;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+  .car-parks-content {
+    max-width: 1500px;
+
+    ul {
+      display: flex;
+      margin: 0;
+      list-style-type: none;
+      padding: 0;
+      justify-content: space-between;
+
+      li {
+        max-width: 230px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px 0;
+        border-radius: 24px;
+
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #759bef;
+
+        &:hover {
+          background-color: #f58e6a;
+          color: #283977;
+          cursor: pointer;
+        }
+      }
+
+      .active {
+        background-color: #759bef;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.keyword {
+  .keyword-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+
+    .keyword-title__icon {
+      margin-right: 15px;
+      color: #283977;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    span {
+      color: #283977;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+}
