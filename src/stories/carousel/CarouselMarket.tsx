@@ -1,16 +1,17 @@
-import './Carousel.scss';
+import './CarouselMarket.scss';
 import { CarOutlined, DollarOutlined } from '@ant-design/icons';
+import CarouselContent from '../carousel-content/CarouselContent';
 
-const Carousel = () => {
+const CarouselMarket = () => {
   return (
     <div className="carousel">
-      <div className="carosel-images"></div>
-      <div className="carosel-content">
-        <p className="carosel-content__title">
+      <CarouselContent />
+      <div className="carousel-content">
+        <p className="carousel-content__title">
           5/73 Lake Street , Bayswater WA 6053
         </p>
         <p>Auction</p>
-        <div className="carosel-content__state">
+        <div className="carousel-content__state">
           <div>
             <span>
               <i>
@@ -47,7 +48,7 @@ const Carousel = () => {
             </span>
           </div>
         </div>
-        <div className="carosel-content__value">
+        <div className="carousel-content__value">
           <div className="items">
             <i>
               <DollarOutlined />
@@ -84,4 +85,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselMarket;

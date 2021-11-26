@@ -1,0 +1,39 @@
+.video {
+  max-width: 845px;
+  box-sizing: border-box;
+  padding: 35px 30px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  .video-title {
+    font-size: 30px;
+    color: #283977;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .video-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .video-ask {
+    font-size: 25px;
+    color: #283977;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .video-buttons {
+    display: flex;
+    button {
+      margin-right: 20px;
+    }
+  }
+}
