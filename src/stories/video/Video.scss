@@ -19,6 +19,16 @@
     margin-bottom: 30px;
   }
 
+  .video-content {
+    width: 100%;
+    height: 450px;
+
+    .intro-video {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
   .video-ask {
     font-size: 25px;
     color: #283977;

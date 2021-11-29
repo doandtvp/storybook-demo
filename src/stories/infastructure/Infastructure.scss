@@ -1,0 +1,47 @@
+.infastructure {
+  max-width: 1500px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 25px 25px 25px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+  .infastructure-header {
+    margin-bottom: 30px;
+  }
+
+  .infastructure-content {
+    .infastructure-content__items {
+      box-sizing: border-box;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      color: var(--Astronaut) !important;
+      cursor: pointer;
+      border-bottom: 1px solid black;
+
+      &:hover {
+        color: red !important;
+      }
+      &:first-child {
+        border-top: 1px solid black;
+      }
+
+      .left-side {
+        display: flex;
+        i {
+          margin-right: 20px;
+        }
+
+        p {
+          margin: 0;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

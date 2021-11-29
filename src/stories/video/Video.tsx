@@ -1,6 +1,7 @@
 import './Video.scss';
 import Button from '../button/Button';
 import ReactPlayer from 'react-player/lazy';
+import video from '../../video/test.mp4';
 
 function Video() {
   return (
@@ -11,7 +12,7 @@ function Video() {
         care of it for you
       </p>
       <div className="video-content">
-        <ReactPlayer url="https://vimeo.com/49580248" controls={true} />
+        <ReactPlayer url={video} controls={true} className="intro-video" />
       </div>
       <div className="video-ask">
         <p>Want to go ahead?</p>

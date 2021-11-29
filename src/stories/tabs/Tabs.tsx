@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Tabs.scss';
 
 interface TabsProps {
-  mw: string;
+  mw?: string;
   lists: {
     icon: JSX.Element;
     name: string;
